@@ -1,0 +1,42 @@
+ALGORITHM Exercice
+
+VAR 
+
+phrase : STRING;
+i:integer := 0
+w :STRING := 0
+v: INTEGER :=0
+c: INTEGER :=0
+
+BEGIN
+
+write('ekteb jomla')
+read(ch)
+// Hello from the other side.
+
+FOR i from 0 to phrase.length-1 step 1 do 
+
+   IF (phrase[i] = " " OR phrase[i] = "." )THEN 
+
+       w=w+1
+    END_IF
+
+   IF (phrase[i]in['a','e','i','y','o','u','A','E','I','Y','O','U']) THEN
+        v:=v+1
+    END_IF
+   
+   IF (phrase[i] in ["a".."z" , "A".."Z"]) THEN
+   c:=c+1
+    
+END_IF
+   END_FOR
+
+   write(w)
+   write(v)
+   
+
+
+
+
+
+END
